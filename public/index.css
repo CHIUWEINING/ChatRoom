@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    height:auto;
+  }
+  @keyframes text-shadow {
+    0% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+
+    20% {  
+        transform: translateY(-1em);
+        text-shadow: 
+            0 0.125em 0 #0c2ffb, 
+            0 0.25em 0 #2cfcfd, 
+            0 -0.125em 0 #fb203b, 
+            0 -0.25em 0 #fefc4b;
+    }
+
+    40% {  
+        transform: translateY(0.5em);
+        text-shadow: 
+            0 -0.0625em 0 #0c2ffb, 
+            0 -0.125em 0 #2cfcfd, 
+            0 0.0625em 0 #fb203b, 
+            0 0.125em 0 #fefc4b;
+    }
+    
+   60% {
+        transform: translateY(-0.25em);
+        text-shadow: 
+            0 0.03125em 0 #0c2ffb, 
+            0 0.0625em 0 #2cfcfd, 
+            0 -0.03125em 0 #fb203b, 
+            0 -0.0625em 0 #fefc4b;
+    }
+
+    80% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+}
+@keyframes glow1 {
+    from {
+      text-shadow: 0 0 20px #590680;
+    }
+    to {
+      text-shadow: 0 0 30px #250be9, 0 0 10px #311a9a;
+    }
+}
+@keyframes ಠ_ಠ {
+  100% {
+    transform: rotateY(-40deg) rotateX(-43deg);
+  }
+}
+#column {
+    overflow: hidden;
+    background-color: #333;
+}
+html, body,.root,#whole{
+    height:100%;
+    padding: 0px;
+    margin:0px;
+    position:relative;
+}
+.main{
+    background-color: aquamarine;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height:91.3vh;
+}
+#message_place{
+    width:74%;
+    height:82vh;
+    border-style:solid;
+    border-width: 2px;
+    border-color:black;
+    overflow-y: scroll;
+    position:relative;
+}
+#group_place{
+    height:82vh;
+    overflow-y: scroll;
+    list-style-type:none;
+}
+#mymessage{
+    border-style:solid;
+    border-width: 2px;
+    border-color:black;
+}
+#send{
+    border-style:solid;
+    border-width: 2px;
+    border-color:black;
+}
+#info{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#log_out_btn{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#log_out_btn:hover,#add_group_btn:hover,#add_member_btn:hover{
+    background-color: red;
+    cursor: pointer;
+}
+#add_group_btn{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.group:hover,#sign_up:hover,#log_in:hover,#google_log:hover{
+    background-color: rgb(171, 170, 170);
+    cursor: pointer;
+}
+#title{
+    text-align: center;
+    font-size: 16px;
+    background-color: cadetblue;
+    animation: text-shadow 1.5s ease-in-out infinite;
+}
+#info_group{
+    float: right;
+    font-size: 23px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    animation: ಠ_ಠ 5s infinite alternate ease-in-out -7.5s;
+    animation-fill-mode: forwards;
+    transform: rotateY(40deg) rotateX(33deg) translateZ(0);
+}
+#add_member_btn{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#add_member_btn:hover, #add_group_btn:hover{
+    background-color: red;
+}
+#col-5{
+    width: 41.66%;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+li{
+    margin:3px;
+    padding:10px 16px;
+}
+#message_place .me{
+    text-align:left;
+    margin-top: 5px;
+    background-color: rgb(198, 255, 54);
+    border-radius: 10px;
+    width:fit-content;
+    position: relative;
+    left:75%;
+}
+.others{
+    text-align:left;
+    margin-top:5px;
+    margin-left: 30px;
+    background-color: aqua;
+    border-radius: 10px;
+    width: fit-content;
+}
+#email,#password{
+    text-align: right;
+    margin:10px;
+    animation-name: glow1;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+#txtpassword,#txtemail{
+    margin:10px;
+}
+#head{
+    position: relative;
+    bottom:15vh;
+    text-align: center;
+    font-size: 30px;
+    font-size: 30px;
+    animation: ಠ_ಠ 5s infinite alternate ease-in-out -7.5s;
+    animation-fill-mode: forwards;
+    transform: rotateY(40deg) rotateX(33deg) translateZ(0);
+}
+#sign_or_log{
+    height:100vh;
+    background-color: aquamarine;
+    overflow-x: hidden;
+}
+#sign_up,#log_in,#google_log{
+    border-radius: 10px;
+    border-style:solid;
+    border-width: 2px;
+    color:black;
+    border-color:black;
+    margin:5px;
+}
+
+#type{
+    position: relative;
+    top:30vh;
+}
+#row3{
+    position:relative;
+    left:25%;
+}
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {width: 16.66%;}
+.col-3 {
+    width: 25%;
+    background-color: burlywood;
+}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
