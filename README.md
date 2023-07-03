@@ -1,5 +1,7 @@
-# Software Studio 2022 Spring Midterm Project
-Project Name: Chatroom
+# Software Studio 2022 Spring Midterm Project in NTHU
+
+Chatroom
+
 ### Scoring
 
 | **Basic components**                             | **Score** | **Check** |
@@ -22,48 +24,60 @@ Project Name: Chatroom
 | :----------------------------------------------- | :-------: | :-------: |
 | Name of functions                                  | 1~10%     | N         |
 
-
 ---
+## Features
+* Authentication: Users can create an account using their email and password or sign in using their Google account.
+* Login Page: The login page includes an animated title rotation and colorful labels for the email and password fields.
+* Chat Room: Upon successful login, users are redirected to the chat room page. The top navigation bar displays options such as Home, the user's username, Create Group, Invite to Group, and Logout.
+* Group Management: Users can switch between different chat groups by clicking on the respective group names in the left sidebar.
+* Messaging: Users can send messages in the selected chat group by typing in the input field at the bottom and clicking the Send button. Messages include timestamps indicating when they were sent.
+* Invite to Group: Users can invite other users to join a specific group. The invited user must have an existing account to be added to the group.
+* Google Notifications: The application accumulates offline message notifications. When a user logs in, they receive notifications for all messages sent by other group members while they were offline. Only the first notification received after logging in is displayed.
+* Database Security: Access to the database is restricted to valid user accounts. This ensures that only authenticated users can read or write data, including creating accounts, sending messages, creating groups, and inviting others to join groups.
+* Private Chat Rooms: Users have the option to create private chat rooms and invite other users to join them.
+
 
 ### How to use 
-一開始會先進入登入頁面，登入頁面有三個按鈕可以按，第一，先將信箱密碼打入欄位，再按sign in即可創建帳號，也會有提示訊息，接下來再打已經創建的信箱密碼，就會進入到聊天室頁面。或可以直接使用google 創帳號及登入。
+* At the beginning, you will be directed to the login page. The login page will have three buttons to choose from. Firstly, you can enter your email and password in the fields and click "Sign In" to create an account. There will also be prompt messages guiding you through the process. Alternatively, you can use the "Sign in with Google" option to create and log into your account.
 
-進到聊天室頁面上面的navbar會顯示home,使用者名稱,創建群組,邀請人進群組以及登出等按鈕，左邊欄位是不同的群組名稱，點擊不同群組即可切換群組，最下面的欄位是訊息輸入欄位，打完訊息後點及send即可發送訊息。
+* Once you're logged in, you will be taken to the chat room page. The top navbar will display options such as "Home," your username, "Create Group," "Invite to Group," and "Logout" buttons. On the left side, you will see different group names, and clicking on a group will switch you to that specific group. At the bottom, there will be an input field to type your messages, and you can send them by clicking the "Send" button.
 
-邀請人進群組,發送訊息都必須得先加入某個群組才可執行，否則都會跳出錯誤訊息。
+* To invite someone to a group or send messages, you must first join a specific group. Otherwise, an error message will be displayed.
 
-邀請人進群組的功能則要求被邀請人必須是已經存在的帳號。
+* The "Invite to Group" feature requires the invited person to already have an existing account.
 
-google notification的部分會累積所有離線時收到的訊息通知，在登入後，會收到所有離線時同組的其他人發送的訊息通知。 若是在登入時收到訊息，則只有登入後第一則收到通知。
+* Google notifications will accumulate all the offline message notifications received. When you log in, you will receive notifications for all the messages sent by other group members while you were offline. If you receive messages while logging in, only the first notification received after logging in will be displayed.
 
-整個頁面可以左右變窄變寬，版面不會跑掉（RWD）
+* The entire webpage will have a responsive design, allowing it to adapt to different screen sizes without losing its layout (Responsive Web Design).
 
-DATABASE規則則設定為只有登入的是有效的帳號時才能去讀或寫database 的資料（包含創建帳號 發送訊息 創建群組 邀請他人進群組）
+* The database rules dictate that only valid accounts can read or write data in the database, including creating accounts, sending messages, creating groups, and inviting others to join groups.
 
-可自行創建私人聊天室，並邀請存在的帳號進入該聊天室。
+* You can create private chat rooms and invite existing users to join them.
 
-使用react框架寫這次作業
+* This project is implemented using the React framework.
 
-可用google sign in
+* Google Sign-In functionality will be used for authentication.
 
-sending code 沒問題
+* There are no issues with sending code.
 
-CSS animation 
-登入頁面：標題旋轉,email password的label會有色彩變化  
-聊天室頁面:右上角current group旋轉, 左下角welcome back跳動
+* CSS animation will be implemented with the following effects:
 
+    * Login page: Title rotation, color variation in the email and password label
+    * Chat room page: Rotation animation for the "Current Group" in the top-right corner, bouncing animation for the "Welcome Back" text in the bottom-left corner
 
+* The current group will be displayed in real-time in the top-right corner.
 
+* Messages will show the time they were sent.
 
-### Function description
+* Switching chat rooms will automatically scroll to the bottom of the message history, with the scrollbar positioned at the bottom.
 
-    右上角即時顯示所在群組
+## Technique
+* React
+* HTML
+* CSS
+* Javascript
 
-    傳送訊息顯示時間
-    
-    切換聊天室自動到訊息最底部，scrollbar在最下層
 
 ### Firebase page link
 
     https://midterm-react2.web.app/
-
